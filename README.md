@@ -14,6 +14,7 @@ Install via NPM: `npm install --save s3-readable-stream`
 ## Usage
 To create a download stream, simply construct it and use it like a standard stream:
 ```javascript
+const fs = require('fs');
 const aws = require('aws-sdk');
 const S3ReadableStream = require('s3-readable-stream');
 
@@ -39,7 +40,7 @@ stream.on('open', (data) => {});
 stream.on('close', () => {});
 
 // Pipe it somewhere
-stream.pipe(fs.createReadStream('/somewhere'));
+stream.pipe(fs.createWriteStream('/somewhere'));
 ```
 
 ## Usage With Express
