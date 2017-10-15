@@ -1,7 +1,7 @@
 {
   "name": "s3-readable-stream",
-  "version": "0.0.2",
-  "description": "Robust S3 download stream",
+  "version": "0.0.3",
+  "description": "Robust S3 readable stream",
   "main": "lib/index.js",
   "dependencies": {
     "lodash": "^4.17.4",
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "s3",
-    "readble",
+    "readable",
     "stream",
     "download"
   ],
