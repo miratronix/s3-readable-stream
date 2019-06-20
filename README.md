@@ -93,7 +93,7 @@ router.get('/download', (req, res, next) => {
 ```
 
 ## Configuration Options
-When constructing an S3 Reable Stream, the following options can be supplied, with the indicated defaults:
+When constructing an S3 Readable Stream, the following options can be supplied, with the indicated defaults:
 ```javascript
 const stream = new S3ReadableStream(s3Client, fileOptions, {
     
