@@ -4,7 +4,7 @@
   "description": "Robust S3 readable stream",
   "main": "lib/index.js",
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "promise-retry": "^1.1.1"
   },
   "repository": {
