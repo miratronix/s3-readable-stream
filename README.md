@@ -60,11 +60,12 @@ const s3Client = new aws.S3({
 
 router.get('/download', (req, res, next) => {
   
-    // Create the S3 getObject params, with support for a range header
+    // Create the S3 getObject params
     const fileOptions = {
-        Bucket: 'SOME_BUCKET',
-        Key: 'SOME_KEY',
-        Range: req.headers.range
+        Bucket: 'SOME_BUCKET',     // The bucket
+        Key: 'SOME_KEY',           // The key
+        VersionId: 'SOME_VERSION', // The version of the object (optional)
+        Range: req.headers.range   // The range to download (optional)
     };
     
     // Set a header indicating a download attachment
