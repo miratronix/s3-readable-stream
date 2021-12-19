@@ -25,10 +25,11 @@ const s3Client = new aws.S3({
    region: 'AWS_REGION'
 });
 
-// Create a standard S3 getObject param object
+// Create the S3 getObject params
 const fileOptions = {
-    Bucket: 'SOME_BUCKET',
-    Key: 'SOME_KEY'
+    Bucket: 'SOME_BUCKET',    // The bucket
+    Key: 'SOME_KEY',          // The key
+    VersionId: 'SOME_VERSION' // The version of the object (optional)
 };
 
 // Create the stream
