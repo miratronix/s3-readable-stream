@@ -1,6 +1,6 @@
 {
   "name": "s3-readable-stream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Robust S3 readable stream",
   "main": "lib/index.js",
   "dependencies": {
