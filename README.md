@@ -62,10 +62,10 @@ router.get('/download', (req, res, next) => {
   
     // Create the S3 getObject params
     const fileOptions = {
-        Bucket: 'SOME_BUCKET',    // The bucket
-        Key: 'SOME_KEY',          // The key
-        VersionId: 'SOM_VERSION', // The version of the object (optional)
-        Range: req.headers.range  // The range to download (optional)
+        Bucket: 'SOME_BUCKET',     // The bucket
+        Key: 'SOME_KEY',           // The key
+        VersionId: 'SOME_VERSION', // The version of the object (optional)
+        Range: req.headers.range   // The range to download (optional)
     };
     
     // Set a header indicating a download attachment
